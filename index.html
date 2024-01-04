@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        h1 {
+            color: #0077cc;
+        }
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+        #pressMeButton {
+            padding: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #32CD32;
+            color: white;
+        }
+        #pressMeButton:hover {
+            background-color: #228B22;
+        }
+    </style>
+</head>
+<body>
+    <h1>Motivational Phrase Generator</h1>
+    
+
+    <button id="pressMeButton" onclick="generateMotivationalPhrase()">Press Me</button>
+
+    <script>
+        function generateMotivationalPhrase() {
+            // Array of motivational phrases
+            const phrases = [
+                "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.",
+                "The only way to do great work is to love what you do.",
+                "Don't watch the clock; do what it does. Keep going.",
+                "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+                "You have within you right now, everything you need to deal with whatever the world can throw at you."
+            ];
+
+            // Get a random phrase
+            const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+
+            // Show an alert with applause emoji and the motivational phrase
+            alert(`👏 Bravo Ibrahim, you got this!\n\n"${randomPhrase}"\n\n🎆🎇`);
+        }
+    </script>
+</body>
+</html>
+
+
+
